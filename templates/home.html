@@ -3,6 +3,13 @@
 {% block title %}Home Page{% endblock %}
 
 {% block content %}
-<h1>Bug Tracker</h1>
-<h3>This is the home page</h3>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto col-10 col-md-8 col-lg-6">
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Bug Tracker</h1>
+    <p class="lead">This is a Bug Tracker. Your bugs will sent via Slack, Trello or Email depending on the bug's priority. Press the button below and enter your bug details.</p>
+    <p class="lead">
+      <a href="/log/" class="btn btn-lg btn-secondary">Bug Tracker</a>
+    </p>
+  </main>
+</div>
 {% endblock %}

@@ -3,26 +3,28 @@
 {% block title %}Log Page{% endblock %}
 
 {% block content %}
-<h5>Enter the required details in the form below.</h5>
-<form method="POST" action="/submit">
-    <div>
-    <label for="name">Name:</label>
-    <input type="text" class="form-control" id="name" name="name" required>
-    </div>
-    <div class="form-group">
-    <label for="desc">Description:</label>
-    <textarea class="form-control" id="desc" name="description" rows="3" cols="50" required></textarea>
-    </div>
-    <div>
-    <label for="priority">Priority:</label>
-    <select class="form-control" id="priority" name="priority">
-        <option value="">Select the priority</option>
-        <option value="high">High</option>
-        <option value="medium">Medium</option>
-        <option value="low">Low</option>
-    </select>
-    <br>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+<div class="mx-auto col-10 col-md-8 col-lg-6">
+    <h5>Enter the required details in the form below.</h5>
+    <form method="POST" action="/submit">
+        <div>
+            <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="desc">Description:</label>
+            <textarea class="form-control" id="desc" name="description" rows="3" cols="50" required></textarea>
+        </div>
+        <div>
+            <label for="priority">Priority:</label>
+            <select class="form-control" id="priority" name="priority">
+                <option value="">Select the priority</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+            </select>
+            <br>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
 {% endblock %}
